@@ -1,0 +1,279 @@
+$cool-blue:#0059D9;
+$cool-black:#000;
+$cool-white:#fff;
+
+body{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.container-first{
+    @extend %dialog_container;
+    background-color: #EFF1F2;
+}
+    .photo_profile{
+        width: 340px;
+        height: 340px;
+        margin: 124px 0px 36px 0px; /*top right button left*/
+        border-radius: 170px;
+    }
+    .name{
+        font-size: 40px;
+        margin: 0px 0px 8px 0px;
+        }
+    .name_job{
+        opacity: 0.7;
+        font-family: 'PT Mono', monospace;
+        width: 504px;
+        margin: auto;
+        font-size: 14px;
+        padding-bottom: 20px;
+    }
+    .reach_button{
+        @extend %dialog_button;
+        padding: 0;
+        border: 0;
+        background-color:$cool-blue; 
+        color: $cool-white;
+        width: 280px;
+        height: 52px;
+        font-size: 18px;
+        margin-bottom: 124px;
+        font-family: 'Montserrat', sans-serif;
+        &:hover{
+            background-color:$cool-black; 
+        } 
+        &:active{
+            background-color:$cool-blue; 
+            opacity: 0.7;
+        }
+    }
+.container-second{
+    font-family: 'Montserrat', sans-serif;
+    background-color: $cool-white;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+    .expectation{
+        width: 700px;
+        margin: auto;
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+    .expectation_name{
+        @extend %dialog_expectation;
+        color: $cool-blue;
+    }
+    .expectation_name_first{
+        @extend %dialog_expectation;
+        color: $cool-black;
+    }
+    %dialog_expectation{
+        width: 700px;
+        margin: auto;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        font-size: 18px;
+        border-top: 1px solid #D2D9E2;
+    }
+    .close{
+        stroke:$cool-blue ; 
+        stroke-width:2; 
+        fill:none;
+        float: right;
+        margin-top: -36px;
+        transform: rotate(225deg);
+        }
+        #hider svg{
+            stroke:$cool-black ; 
+            transform: rotate(-225deg);
+        }
+    #hider,
+    #hider1,
+    #hider2,
+    #hider3{
+        margin: 0 auto;
+        width: 700px;
+        &:hover+.expectation_name_text{
+            animation: play 1s;
+            display: block;
+        }
+        &:hover .expectation_name{
+            color: $cool-black;
+        }
+        &:hover svg{
+            stroke:$cool-black ; 
+            transform: rotate(-225deg);
+        }
+    }
+    @keyframes play{
+        from {opacity: 0;}
+        to {opacity: 0.7;}
+    }
+    .expectation_name_text{
+        margin: 0px;
+        opacity: 0.7;
+        font-family: 'PT Mono', monospace;
+        width: 520px;
+        margin-left: 150px;
+        font-size: 14px;
+        color: $cool-black;
+        line-height: 20px;
+        margin-bottom: 20px;
+        display: none;
+    }
+    .expectation_name_text_first{
+        margin: 0px;
+        opacity: 0.7;
+        font-family: 'PT Mono', monospace;
+        width: 520px;
+        margin-left: 150px;
+        font-size: 14px;
+        color: $cool-black;
+        line-height: 20px;
+        margin-bottom: 20px;
+        display: block;
+    }
+.container-third{
+    @extend %dialog_container;
+    max-height: 720px;
+    color: $cool-white;
+    background-color: #25282A;
+    height: 523px;
+}
+    .my_work{
+        margin: 0;
+        font-family: 'Montserrat', sans-serif; 
+        font-size: 32px;
+        color: $cool-white;
+        line-height: 36px;
+        padding-top: 100px;
+    }
+    .my_work_text{
+        opacity: 0.7;
+        font-family:  'PT Mono', monospace;
+        font-size: 14px;
+        color: $cool-white;
+        line-height: 20px;
+        margin: auto;
+        margin-top: 8px;
+    }
+.container-fourth{
+    @extend %dialog_container;
+    background-color: #EFF1F2;
+}
+    .info{
+        font-size: 32px;
+        color: $cool-black;
+        text-align: center;
+        padding-top: 100px;
+        margin: 0px;
+    }
+    .icon{
+        border-radius: 170px;
+        text-decoration:none;
+        margin: 16px 11px 16px 0px;
+        opacity: 0.9;
+        width: 48px;
+        height: 48px;
+        &:hover{
+            opacity: 1;
+        } 
+        &:active{
+            opacity: 0.7;
+        }
+    }
+    .text_info{
+        font-family:  'PT Mono', monospace;
+        font-size: 14px;
+        color: $cool-black;
+        margin: auto;
+        line-height: 20px;
+        width: 700px;
+        margin-bottom: 38px; 
+        font-weight: bold;
+        opacity: 0.8;
+    }
+    .input_name_email{
+        @extend %dialog_info;
+        background: $cool-white;
+        width: 328px;
+        height: 32px;
+        margin: 0px 7px 20px 7px;
+        color: $cool-black;
+    }
+    .message{
+        @extend %dialog_info;
+        width: 687px;
+        height: 126px;
+        padding-top: 6px;
+        resize:none;
+    }
+    %dialog_info{
+        border-radius: 4px;
+        font-size: 16px;
+        border: 1px solid rgba(31,64,111,0.20);
+        font-family: 'PT Sans', sans-serif;
+        padding-left: 12px;
+    }
+    input,textarea{
+        &::-moz-placeholder {
+            opacity: 0.8;
+        }
+        &::-webkit-input-placeholder{
+            opacity: 0.8;
+        }
+        &:focus{
+            border: 1px solid $cool-blue;
+            outline:none;
+        }
+        &:valid:not(:placeholder-shown){
+            border-color: green;
+        }
+        &:invalid:not(:placeholder-shown){
+            border-color: red;
+        }
+    }
+    .button_file{
+        @extend %dialog_button;
+        background: rgba(255,255,255,0.00);
+        border: 1px solid rgba(31,64,111,0.20);
+        font-family: 'PT Sans', sans-serif;
+        font-size: 16px;
+        color: $cool-blue;
+        height: 36px;
+        margin: 16px 0px 20px 0px;
+        width: 699px;
+        &:hover{
+            color:$cool-black; 
+        } 
+        &:active{
+            color:$cool-blue; 
+            opacity: 0.7;
+        }
+    }
+    .button_send{
+        @extend %dialog_button;
+        background: $cool-blue;
+        height: 52px;
+        font-family: 'Montserrat', sans-serif; 
+        font-size: 18px;
+        color: $cool-white;
+        margin-bottom: 100px;
+        border:0;
+        width: 699px;
+        &:hover{
+            background-color:$cool-black; 
+        } 
+        &:active{
+            background-color:$cool-blue; 
+            opacity: 0.7;
+        }
+    }
+%dialog_button{
+        outline:none;
+        border-radius: 5px;
+    }
+%dialog_container{
+        text-align: center;
+        font-family: 'Montserrat', sans-serif; 
+    }

@@ -1,0 +1,104 @@
+.cld-main a{
+  color: #0080FF;
+}
+.cld-main svg{
+  fill: #0080FF;
+}
+  .cld-datetime{
+    position: relative;
+    width: 66%;
+    min-width: 100px;
+    max-width: 300px;
+    overflow: hidden;
+  }
+  .cld-datetime .today{
+    position: relative;
+    float: left;
+    width: calc(100% - 40px);
+    text-align: center;
+  }
+  .cld-nav{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+  }
+  .cld-nav:hover{
+    cursor: pointer;
+  }
+  .cld-nav:hover svg{
+      fill: #738d19;
+  }
+  .cld-rwd{
+    float: left;
+  }
+  .cld-fwd{
+    float: right;
+  }
+ 
+.cld-labels, .cld-days{
+  list-style-type : none;
+  padding-left: 0;
+}
+  .cld-label, .cld-day{
+    text-align: left;
+    width: 705px;
+    height: 45px;
+  }
+  .cld-day{
+    border: 1px solid #eee;
+    white-space: nowrap;
+  }
+  .cld-day.today{
+    background: #a8c342;
+  }
+    .cld-number{
+	    display:inline-block;
+      position: relative;
+      min-width: 68px;
+      text-align: center;
+      margin: 12px;
+    }
+      .cld-title{
+        position: relative;
+        z-index: 5;
+        display: inline;
+        padding: 5px 10px;
+        background: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 12px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+      }
+      .cld-title-button{
+        position: relative;
+        z-index: 5;
+        display: inline-block;
+        font-size: 12px;
+        color:gray;
+        border: 1px solid #ccc;
+        padding: 2px;
+        width: 10px;
+        cursor: pointer;
+        border-radius: 30px;
+        text-align: center;
+      }
+      .title-button-active{
+        color:red;
+      }
+      .cld-title-button:hover{
+        color:black;
+        background: lightslategray;
+      }
+      .cld-number:hover .cld-title{
+        display: inline;
+      }
+      .cld-number.eventday{
+        font-weight: bold;
+        color: #0080FF;
+      }
+      .cld-number.eventday:hover{
+        background: #eee;
+      }
+

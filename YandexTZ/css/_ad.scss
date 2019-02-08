@@ -1,0 +1,160 @@
+@media only screen and (max-width: 600px) {
+    body {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+    
+    .container-first{
+        width: 600px;
+    }
+        .photo_profile{
+            width: 250px;
+            height: 250px;
+            margin: 165px 0px 32px 0px;
+        }
+        .name{
+            font-size: 32px;
+        }
+        .name_job{
+            width: 300px;
+            line-height: 1.4;
+        }
+        .reach_button{
+            margin-bottom: 165px;
+        }
+    .container-second{
+        width: 600px;
+        margin-bottom: 56px;
+     }
+        #hider,
+        #hider1,
+        #hider2,
+        #hider3{
+            margin: auto; 
+            width: 520px;
+        }
+        .expectation{
+            width: 520px;
+            margin-bottom: 14px;
+            margin-top: 52px;
+        }
+        .expectation_name{
+            width: 520px; 
+        }
+        .expectation_name_text{
+            width: 385px;
+            margin-left: 40px;
+        }
+    .container-third{
+        width: 600px;
+    }
+        .my_work{
+            padding-top: 52px;
+        }
+    .container-fourth{
+        width: 600px;
+        margin: auto;
+    }
+        .info{
+            padding-top: 52px;
+        }
+        .text_info{
+            margin: auto; 
+            width: 520px;
+            margin-bottom: 20px;
+        }
+        .input_name_email{
+            width: 508px;
+            margin-bottom: 16px;
+        }
+        .message{
+            width: 508px;   
+        }
+        .button_file{
+            width: 520px;
+            margin: 14px 0px 16px 0px;
+        }
+        .button_send{
+            width: 520px;
+            margin-bottom: 52px;
+        }
+  }
+
+  @media only screen and (max-width: 320px){
+    body {
+        max-width: 320px;
+        margin: 0 auto;
+      }
+    
+    .container-first{
+        width: 320px;
+    }
+        .photo_profile{
+            width: 205px;
+            height: 205px;
+            margin: 88px 0px 27px 0px ;
+        }
+        .name_job{
+            width: 300px;
+            line-height: 1.4;
+        }
+        .reach_button{
+            margin-bottom: 87px;
+        }
+    .container-second{
+        width: 320px;
+    }
+        #hider,
+        #hider1,
+        #hider2,
+        #hider3{
+            width: 280px;
+            margin:auto;
+        }
+        .expectation{ 
+            width: 232px;
+            margin: 52px 0px 16px 20px;
+            line-height: 36px;
+        }
+        .expectation_name{
+            width: 280px;
+        }
+        .expectation_name_text{
+            width: 280px;
+            margin:auto;
+            margin-bottom: 20px;
+        }
+    .container-third{
+        width: 320px;
+    }
+            .my_work_text{
+                width: 280px;
+            }
+            .my_work{
+                padding-top: 52px;
+            }
+    .container-fourth{
+        width: 320px;
+        margin: auto;
+    }
+        .text_info{
+            width: 280px;
+            margin:auto;
+            margin-bottom: 20px;
+        }
+        .input_name_email{
+            width: 268px;
+            margin-bottom: 16px;
+        }
+        .message{
+            width: 268px;   
+        }
+        .button_file{
+            width: 280px;
+            margin: 14px 0px 16px 0px;
+        }
+        .button_send{
+            width: 280px;
+            margin-bottom: 52px;                     
+        }     
+  }
